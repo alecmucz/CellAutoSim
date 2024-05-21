@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs.projects.gameoflife.ViewController">
+    <top>
+        <MenuBar BorderPane.alignment="CENTER">
+            <menus>
+                <Menu mnemonicParsing="false">
+                    <graphic>
+                        <MenuButton mnemonicParsing="false" text="Select Cellular Automata Model">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="Conway's Game Of Life" />
+                            </items>
+                        </MenuButton>
+                    </graphic>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Load Grid">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Load Grid 1" />
+                        <MenuItem mnemonicParsing="false" text="Load Grid 2" />
+                        <MenuItem mnemonicParsing="false" text="Load Grid 3" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+    <bottom>
+        <Button mnemonicParsing="false" text="Start" BorderPane.alignment="CENTER" />
+    </bottom>
+    <padding>
+        <Insets bottom="10.0" />
+    </padding>
+    <center>
+        <AnchorPane fx:id="rootCanvas" BorderPane.alignment="CENTER" />
+    </center>
+</BorderPane>

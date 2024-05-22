@@ -15,9 +15,11 @@
             <menus>
                 <Menu mnemonicParsing="false">
                     <graphic>
-                        <MenuButton mnemonicParsing="false" text="Select Cellular Automata Model">
+                        <MenuButton fx:id="menuButtonID" mnemonicParsing="false" text="Select Cellular Automata Model">
                             <items>
-                                <MenuItem mnemonicParsing="false" text="Conway's Game Of Life" />
+                                <MenuItem fx:id="conwayID" mnemonicParsing="false" text="Conway's Game Of Life" />
+                        <MenuItem fx:id="brianID" mnemonicParsing="false" text="Brian's Brain" />
+                        <MenuItem fx:id="codiID" mnemonicParsing="false" text="Codi" />
                             </items>
                         </MenuButton>
                     </graphic>

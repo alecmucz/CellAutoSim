@@ -5,12 +5,13 @@ import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
 
-public class ResizableCanvas extends Canvas {
+public class Grid extends Canvas {
 
-    private static final int cellSize = 15;
     private boolean[][] cells;
+    private static final int cellSize = 15;
 
-    public ResizableCanvas() {
+
+    public Grid() {
         initializeCells();
 
         widthProperty().addListener(evt -> {
